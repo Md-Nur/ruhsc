@@ -12,7 +12,7 @@ const Drawer = ({ children }: { children: ReactNode }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <Navigation classes="menu p-4 mt-0 w-80 min-h-full bg-base-200 text-base-content" />
+        <Navigation classes="menu p-4 mt-14 w-56 min-h-full bg-base-200 text-base-content" />
       </div>
     </div>
   );

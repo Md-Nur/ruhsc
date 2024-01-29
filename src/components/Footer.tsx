@@ -7,12 +7,8 @@ const Footer = () => {
   return (
     <footer className="footer p-10 bg-accent text-accent-content">
       <aside>
-        <Image src={logo} alt="Logo" className="max-w-sm w-full" />
-        <p>
-          Rajshahi University Higher Study Club
-          <br />
-          Providing reliable solutions since 2015
-        </p>
+        <Image src={logo} alt="Logo" className="max-w-sm w-full -m-5" />
+        <p className="my-2">Providing reliable solutions since 2015</p>
       </aside>
       <nav>
         <h6 className="footer-title">Social</h6>
