@@ -1,22 +1,24 @@
 import logo from "@/assets/logo.png";
 import Image from "next/image";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <Image src={logo} alt="Logo" className="max-w-xl rounded-lg w-full" />
-        <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+    <section id="hero-container">
+      <Navbar />
+      <div className="flex items-center justify-center bg-gradient-to-b from-transparent to-black w-full h-[calc(100%-20px)]">
+        <div className="w-full text-center text-white md:w-2/3">
+          <h1 className="text-5xl font-extrabold m-3">
+            Rajshahi University Higher Study Club
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+            ad, aliquam ducimus ipsam quo rem, asperiores eius, inventore
+            exercitationem voluptas minima! Eu
           </p>
-          <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
