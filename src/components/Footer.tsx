@@ -11,7 +11,7 @@ const Footer = () => {
         <p className="my-2">Providing reliable solutions since 2015</p>
       </aside>
       <nav>
-        <h6 className="footer-title">Social</h6>
+        <h6 className="footer-title -z-10">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <Link href={"/"}>
             <FaFacebook className="w-12 h-12" />

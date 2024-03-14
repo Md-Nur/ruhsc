@@ -5,14 +5,17 @@ import logo from "@/assets/logo.png";
 import Link from "next/link";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ myClasses }: { myClasses: string }) => {
   return (
-    <nav className="navbar z-20 sticky top-0 glass">
+    <nav className="navbar z-20 glass sticky top-0 lg:static">
       <div className="navbar-start">
-        <label htmlFor="my-drawer" className="btn bg-transparent">
-          <MdOutlineMenuOpen className="w-5 h-5" />
+        <label
+          htmlFor="my-drawer"
+          className={`px-5 cursor-pointer ${myClasses}`}
+        >
+          <MdOutlineMenuOpen className="w-5 h-5 text-black" />
         </label>
-        <Link className="px-3" href="/">
+        <Link className={`px-3 ${myClasses}`} href="/">
           <Image src={logo} alt="Logo" height={40} />
         </Link>
       </div>

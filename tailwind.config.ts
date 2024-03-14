@@ -6,14 +6,20 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {},
-    },
-  },
+
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["retro", "nord"],
+    themes: [
+      {
+        mytheme: {
+          primary: "#1e2e54",
+          secondary: "#30475f",
+          accent: "#3e6993",
+          neutral: "#31578c",
+          "base-100": "#32476b",
+        },
+      },
+    ],
   },
 };
 export default config;

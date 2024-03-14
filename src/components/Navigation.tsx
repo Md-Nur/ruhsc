@@ -1,14 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 const Navigation = ({ classes }: { classes: string }) => {
   return (
     <ul
       tabIndex={0}
-      className={
-        "menu menu-sm dropdown-content p-2 w-full" +
-        classes
-      }
+      className={"menu menu-sm dropdown-content p-2 w-full" + classes}
     >
+      <li className="mb-5">
+      <Link className="flex bg-white items-center justify-center" href="/">
+        <Image src={logo} alt="Logo" height={40} />
+      </Link>
+      </li>
       <li>
         <Link href="/">Home</Link>
       </li>
