@@ -18,7 +18,7 @@ const events = [
     description: "This is an upcoming event",
     location: "Online",
     imgUrl:
-      "https://res.cloudinary.com/dxouxwdor/image/upload/v1716579367/ruhsc-web/nwr2wxaqc9ene9fu2d4a.png",
+      "https://res.cloudinary.com/dxouxwdor/image/upload/v1716587540/ruhsc-web/past-events/wy0gtkpqej0fomczmpdf.jpg",
   },
   {
     _id: "3",
@@ -27,7 +27,7 @@ const events = [
     description: "This is an upcoming event",
     location: "Online",
     imgUrl:
-      "https://res.cloudinary.com/dxouxwdor/image/upload/v1716579367/ruhsc-web/nwr2wxaqc9ene9fu2d4a.png",
+      "https://res.cloudinary.com/dxouxwdor/image/upload/v1716587790/ruhsc-web/past-events/bniuy0rkmikfyqkfmwcz.jpg",
   },
 ];
 
