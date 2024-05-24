@@ -1,5 +1,5 @@
-const page = ({ children }) => {
-  return <div>page:{children.id}</div>;
+const page = ({ params }) => {
+  return <div>page:{params.id}</div>;
 };
 
 export default page;
