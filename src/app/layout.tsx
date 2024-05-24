@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body className={inter.className + "bg-fourth"}>
         <GlobalContext>
-            {children}
-            <Footer />
+          {children}
+          <Footer />
         </GlobalContext>
       </body>
     </html>

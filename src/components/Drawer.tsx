@@ -15,7 +15,7 @@ const Drawer = ({
     <div className={`drawer ${myClasses}`}>
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">{children}</div>
-      <div className="drawer-side">
+      <div className="drawer-side z-40">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"
