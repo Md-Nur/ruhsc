@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Navigation from "./Navigation";
 import { MdOutlineMenuOpen } from "react-icons/md";
 import logo from "@/assets/logo.png";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import defaultAvatar from "@/assets/defaultAvatar.jpg";
 
 const Navbar = ({ myClasses }: { myClasses: string }) => {
   return (
-    <nav className="navbar z-20 sticky top-0 bg-base-100">
+    <nav className="navbar z-50 sticky top-0 bg-base-200">
       <div className="navbar-start">
         <label
           htmlFor="my-drawer"

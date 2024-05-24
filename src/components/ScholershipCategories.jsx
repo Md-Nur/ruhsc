@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ScholarshipCountries = [
   {
     id: 1,
@@ -18,11 +20,11 @@ const ScholarshipCountries = [
       "https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    id:4,
+    id: 4,
     name: "Other",
     image:
       "https://images.unsplash.com/photo-1433883669848-fa8a7ce070b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291bnRyeXxlbnwwfHwwfHx8MA%3D%3D",
-  }
+  },
 ];
 
 const ScholershipCategories = () => {
@@ -41,11 +43,12 @@ const ScholershipCategories = () => {
               <img src={country.image} alt={country.name} />
             </figure>
             <div className="card-body justify-center items-center">
-              <h2 className="card-title">{country.name}</h2>
-              {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
-              <div className="card-actions ">
-                <button className="btn btn-primary">Explore</button>
-              </div>
+              <Link
+                href={`scholarship/${country.name.toLocaleLowerCase()}`}
+                className="card-title link link-hover text-3xl font-bold"
+              >
+                {country.name}
+              </Link>
             </div>
           </div>
         ))}

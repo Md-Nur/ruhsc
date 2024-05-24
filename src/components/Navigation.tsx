@@ -9,9 +9,9 @@ const Navigation = ({ classes }: { classes: string }) => {
       className={"menu menu-sm dropdown-content p-2 w-full" + classes}
     >
       <li className="mb-5">
-      <Link className="flex bg-white items-center justify-center" href="/">
-        <Image src={logo} alt="Logo" height={40} />
-      </Link>
+        <Link className="flex bg-white items-center justify-center" href="/">
+          <Image src={logo} alt="Logo" height={40} />
+        </Link>
       </li>
       <li>
         <Link href="/">Home</Link>
@@ -21,50 +21,50 @@ const Navigation = ({ classes }: { classes: string }) => {
           <summary>Scholarship</summary>
           <ul className="p-2">
             <li>
-              <Link href="/">UK</Link>
+              <Link href="/scholarship/uk">UK</Link>
             </li>
             <li>
-              <Link href="/">US</Link>
+              <Link href="/scholarship/usa">USA</Link>
             </li>
             <li>
-              <Link href="/">Canada</Link>
+              <Link href="/scholarship/canada">Canada</Link>
             </li>
             <li>
-              <Link href="/">To Be Continued</Link>
+              <Link href="/scholarship/other">To Be Continued</Link>
             </li>
           </ul>
         </details>
       </li>
       <li>
-        <Link href="/">Internship/Fellowship</Link>
+        <Link href="/fellowship">Internship/Fellowship</Link>
       </li>
       <li>
-        <Link href="/">Exchange Program</Link>
+        <Link href="/exchange-program">Exchange Program</Link>
       </li>
       <li>
-        <Link href="/">Conference</Link>
+        <Link href="/conference">Conference</Link>
       </li>
       <li>
-        <Link href="/">Online Courses</Link>
+        <Link href="/online-courses">Online Courses</Link>
       </li>
       <li>
-        <Link href="/">Jobs</Link>
+        <Link href="/jobs">Jobs</Link>
       </li>
       <li>
-        <Link href="/">Blog</Link>
+        <Link href="/blog">Blog</Link>
       </li>
       <li>
         <details>
           <summary>About Us</summary>
           <ul className="p-2">
             <li>
-              <Link href="/">Our Team</Link>
+              <Link href="/about-us/our-team">Our Team</Link>
             </li>
             <li>
-              <Link href="/">Club History</Link>
+              <Link href="/about-us/club-history">Club History</Link>
             </li>
             <li>
-              <Link href="/">Alumni Profile</Link>
+              <Link href="/about-us/alumni-profile">Alumni Profile</Link>
             </li>
           </ul>
         </details>
@@ -74,25 +74,25 @@ const Navigation = ({ classes }: { classes: string }) => {
           <summary>Past Events</summary>
           <ul className="p-2">
             <li>
-              <Link href="/">Workshop</Link>
+              <Link href="/past-events/workshop">Workshop</Link>
             </li>
             <li>
-              <Link href="/">Session</Link>
+              <Link href="/past-events/session">Session</Link>
             </li>
             <li>
-              <Link href="/">Charity Act</Link>
+              <Link href="/past-events/charity-act">Charity Act</Link>
             </li>
           </ul>
         </details>
       </li>
       <li>
-        <Link href="/">Success Stories</Link>
+        <Link href="/success-stories">Success Stories</Link>
       </li>
       <li>
-        <Link href="/">Join Us</Link>
+        <Link href="/join-us">Join Us</Link>
       </li>
       <li>
-        <Link href="/">FAQ</Link>
+        <Link href="/faq">FAQ</Link>
       </li>
     </ul>
   );
