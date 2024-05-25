@@ -5,7 +5,7 @@ const ScholarshipCountries = [
     id: 1,
     name: "USA",
     image:
-      "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNhfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1576723658639-513237fdd520?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHVzYXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 2,
@@ -33,14 +33,14 @@ const ScholershipCategories = () => {
       <h2 className="text-center text-3xl font-bold text-base-content mt-10 mb-5">
         Scholarship Categories
       </h2>
-      <div className="flex gap-1 md:gap-3 w-full px-1 md:px-7 lg:px-10 ">
+      <div className="flex gap-1 md:gap-3 w-full px-1 md:px-7 lg:px-10 flex-wrap justify-evenly">
         {ScholarshipCountries.map((country) => (
           <div
             key={country.id}
-            className="card w-96 bg-base-100 shadow-xl image-full"
+            className="card bg-base-100 shadow-xl image-full cursor-pointer hover:shadow-2xl transition-all duration-300 ease-in-out my-3"
           >
             <figure>
-              <img src={country.image} alt={country.name} />
+              <img src={country.image} alt={country.name} className="object-cover sm:w-72 h-96" />
             </figure>
             <div className="card-body justify-center items-center">
               <Link
