@@ -30,7 +30,7 @@ const Navigation = ({ classes }: { classes: string }) => {
               <Link href="/scholarship/canada">Canada</Link>
             </li>
             <li>
-              <Link href="/scholarship/other">To Be Continued</Link>
+              <Link href="/scholarship/other">Other</Link>
             </li>
           </ul>
         </details>

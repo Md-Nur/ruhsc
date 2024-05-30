@@ -16,7 +16,7 @@ const Navbar = ({ myClasses }: { myClasses: string }) => {
           <MdOutlineMenuOpen className="w-5 h-5 text-base-content" />
         </label>
         <Link className={`px-3 ${myClasses}`} href="/">
-          <Image src={logo} alt="Logo" height={40} />
+          <Image src={logo} alt="Logo" height={40} className="bg-white rounded" />
         </Link>
       </div>
       {/* <div className="navbar-center hidden lg:flex w-9/12">

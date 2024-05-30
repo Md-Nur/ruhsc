@@ -1,7 +1,3 @@
-import logo from "@/assets/logo.png";
-import Image from "next/image";
-import Navbar from "./Navbar";
-
 const Hero = () => {
   return (
     <>
@@ -12,11 +8,10 @@ const Hero = () => {
               Wellcome to RUHSC
             </h1>
             <p>
-              Rajshahi University Higher Study Club. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Officia corporis consectetur minus
-              facilis deleniti nihil cupiditate praesentium repudiandae veniam
-              vel sequi aliquam beatae illo delectus, provident aperiam alias
-              quibusdam quos.
+              A non-partisan org envisoning Higher Education abroad from
+              Bangladesh offering updates on
+              scholarship/mentorship/fellowship/job circulat, global
+              oppourtunites & diversity of possibilities
             </p>
           </div>
         </div>
