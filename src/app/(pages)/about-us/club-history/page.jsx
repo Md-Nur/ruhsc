@@ -27,8 +27,8 @@ const page = () => {
         to the higher study aspirants with a view to enhancing their social
         inclusion, skill development, interpersonal & intrapersonal
         relationships, intellectual skills etc. From its past successful years,
-        it's evident that most of the members are pursuing their post grad
-        careers in reputed institutions across the globe. And thus RUHSC's
+        it&apos;s evident that most of the members are pursuing their post grad
+        careers in reputed institutions across the globe. And thus RUHSC&apos;s
         alumni members are now linked to running club members & furthermore
         supervise RUHSC.
       </p>

@@ -1,6 +1,6 @@
 import CardContainer from "@/components/CardContainer";
 
-export const blog = [
+const blog = [
   {
     id: 1,
     title: "Top 10 Tips for Winning Scholarships",
