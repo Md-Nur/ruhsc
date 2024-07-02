@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
 import Drawer from "@/components/Drawer";
 import UpcomingEvent from "@/components/UpcomingEvent";
 import Navbar from "@/components/Navbar";

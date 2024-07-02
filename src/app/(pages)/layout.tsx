@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <Drawer myClasses="md:drawer-open">
       <Navbar myClasses="md:hidden" />
-      <main className="min-h-[calc(100vh-290px)] flex w-full items-center justify-center">{children}</main>
+      <main className="min-h-[calc(100vh-371px)] flex w-full items-center justify-center">{children}</main>
       <Footer />
     </Drawer>
   );

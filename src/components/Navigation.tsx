@@ -1,8 +1,11 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import useUserAuth from "@/contexts/userAuth";
 
 const Navigation = ({ classes }: { classes: string }) => {
+  const { userAuth } = useUserAuth();
   return (
     <ul
       tabIndex={0}
@@ -88,9 +91,11 @@ const Navigation = ({ classes }: { classes: string }) => {
       <li>
         <Link href="/success-stories">Success Stories</Link>
       </li>
-      <li>
-        <Link href="/join-us">Join Us</Link>
-      </li>
+      {!userAuth?.name && (
+        <li>
+          <Link href="/join-us">Join Us</Link>
+        </li>
+      )}
       <li>
         <Link href="/faq">FAQ</Link>
       </li>
