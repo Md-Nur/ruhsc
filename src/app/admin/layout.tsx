@@ -21,7 +21,7 @@ const Routes = () => {
   );
 };
 
-const layout = ({ children }: { children: ReactNode }) => {
+const AdminLayout = ({ children }: { children: ReactNode }) => {
   const { loading, userAuth } = useUserAuth();
   if (loading)
     return (
@@ -73,4 +73,4 @@ const layout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default layout;
+export default AdminLayout;
