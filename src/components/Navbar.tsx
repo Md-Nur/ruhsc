@@ -60,7 +60,7 @@ const Navbar = ({ myClasses }: { myClasses: string }) => {
             {!loading && userAuth?.name ? (
               <>
                 <li>
-                  <a className="justify-between">Profile</a>
+                  <Link href="/admin">Admin</Link>
                 </li>
                 <li>
                   <a>Settings</a>

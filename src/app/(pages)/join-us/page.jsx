@@ -65,7 +65,9 @@ const Signin = () => {
         icon: "error",
         title: "Oops...",
         text:
-          error.response.data.message || error.message || "Something went wrong",
+          error.response.data.message ||
+          error.message ||
+          "Something went wrong",
       });
     } finally {
       setLoading(false);
@@ -85,7 +87,7 @@ const Signin = () => {
   return (
     <HeroForms title="Sign In" imgUrl={preview || groupImg}>
       <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
-        <FileInput setImage={setImage} setPreview={setPreview} />
+        <FileInput setImage={setImage} setPreview={setPreview} title="Avatar" />
         <Input
           label="name"
           type="text"

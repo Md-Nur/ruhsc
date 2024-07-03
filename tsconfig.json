@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/contexts/userAuth.ts", "src/providers/UserAuthProvider.jsx", "src/app/(pages)/join-us/page.jsx", "src/components/FormInputs/Input.tsx", "src/components/Logout.jsx", "src/app/(pages)/login/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/contexts/userAuth.ts", "src/providers/UserAuthProvider.jsx", "src/app/(pages)/join-us/page.jsx", "src/components/FormInputs/Input.tsx", "src/components/Logout.jsx", "src/app/(pages)/login/page.jsx", "src/components/AddUpdateContent.jsx"],
   "exclude": ["node_modules"]
 }

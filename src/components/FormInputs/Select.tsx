@@ -1,23 +1,23 @@
 import { useId } from "react";
 import { UseFormRegister } from "react-hook-form";
 
-type InputProps = {
+type SelectProps = {
   label: string;
-  type: string;
   className: string;
   errorLabel: string;
+  options: string[];
   register: UseFormRegister<any>;
   required: boolean;
 };
 
-const Input = ({
-  type = "text",
+const Select = ({
   label,
   className = "",
   errorLabel,
+  options,
   register,
   required,
-}: InputProps) => {
+}: SelectProps) => {
   const id = useId();
   return (
     <div className="form-control">
@@ -31,15 +31,19 @@ const Input = ({
           <span className="label-text text-error">{errorLabel}</span>
         </label>
       )}
-      <input
+      <select
         id={id}
-        type={type}
-        placeholder={label[0].toUpperCase() + label.slice(1)}
-        className={"input input-bordered " + className}
+        className={"select select-bordered w-full " + className}
         {...register(label, { required })}
-      />
+      >
+        {options.map((option, i) => (
+          <option className="capitalize" key={i} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
 
-export default Input;
+export default Select;

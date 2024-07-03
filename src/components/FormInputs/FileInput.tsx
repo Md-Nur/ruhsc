@@ -1,10 +1,12 @@
-import { ChangeEvent, useId } from "react";
+import { useId } from "react";
 import { FaUpload } from "react-icons/fa";
 
 const FileInput = ({
+  title,
   setImage,
   setPreview,
 }: {
+  title: string;
   setImage: (file: File) => void;
   setPreview: (preview: string) => void;
 }) => {
@@ -31,7 +33,7 @@ const FileInput = ({
           onChange={handleFileChange}
         />
 
-        <span className="uppercase text-neutral-content">Avatar</span>
+        <span className="uppercase text-neutral-content">{title}</span>
       </label>
     </div>
   );
